@@ -1,7 +1,7 @@
-##Examples of output data for API:
+## Examples of output data for API:
 ***
-###Common
-####POST -> `/signin + body:{ email: email, password: password }`
+### Common
+#### POST -> `/signin + body:{ email: email, password: password }`
 ```json
 {
     "success": true,
@@ -11,8 +11,8 @@
 ```
 
 ***
-###User
-####GET -> `/my` *or* `/user/:userName` -> *get user profile*
+### User
+#### GET -> `/my` *or* `/user/:userName` -> *get user profile*
 ```json
 {
     "lastName": "Durov",
@@ -32,7 +32,7 @@
     "userName": "durov"
 }
 ```
-####GET -> `/invites` *or* `/contacts` -> *get array of users profile (json with array of objects) (+ for `/contacts` personal chat id)*
+#### GET -> `/invites` *or* `/contacts` -> *get array of users profile (json with array of objects) (+ for `/contacts` personal chat id)*
 ```json
 [
     {
@@ -73,7 +73,7 @@
     }
 ]
 ```
-####GET -> `/bookmarks` -> *get all msgs (array of objects)*
+#### GET -> `/bookmarks` -> *get all msgs (array of objects)*
 ```json
 [
     {
@@ -100,8 +100,8 @@
 ```
 
 ***
-###Chat
-####GET -> `/chats`  ->  *get array of chats profiles (json with array of objects)*
+### Chat
+#### GET -> `/chats`  ->  *get array of chats profiles (json with array of objects)*
 ```json
 [
     {
@@ -197,7 +197,7 @@
     }
 ]
 ```
-####GET -> `/chat/:chatId` -> *get full chat information with 20 latest msgs*
+#### GET -> `/chat/:chatId` -> *get full chat information with 20 latest msgs*
 ```json
 {
     "_id": "59d7e58a71b1964d1b2284e3",
